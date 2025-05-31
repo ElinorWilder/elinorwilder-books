@@ -143,6 +143,9 @@ body, h1, h2, h3, h4, h5, h6, p, a, .button {
   color: gold;
   transform: scale(1.03);
 }
+.back-link {
+  margin-top: 2em;
+}
 .about-center {
   position: absolute;
   top: 0; left: 0;
