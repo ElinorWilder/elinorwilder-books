@@ -43,7 +43,7 @@ body {
   }
 }
 
-/* Full Screen Background Video */
+/* === FULLSCREEN VIDEO BACKGROUND === */
 .bg-video {
   position: fixed !important;
   top: 0 !important;
@@ -52,13 +52,35 @@ body {
   height: 100vh !important;
   object-fit: cover !important;
   z-index: -2 !important;
-  min-width: 100vw !important;
-  min-height: 100vh !important;
-  max-width: 100vw !important;
-  max-height: 100vh !important;
   pointer-events: none !important;
   background: black !important; /* fallback color */
   display: block !important;
+}
+
+/* === FULLSCREEN IMAGE BACKGROUND === */
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  pointer-events: none;
+  /* No min/max width/height here, avoids image zoom out */
+  display: block;
+}
+
+/* If you have a .background div, keep this minimal: */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  pointer-events: none;
+  /* No object-fit or sizing here */
 }
 
 /* Optional Overlay for Contrast */
