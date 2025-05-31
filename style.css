@@ -143,4 +143,30 @@ body, h1, h2, h3, h4, h5, h6, p, a, .button {
   color: gold;
   transform: scale(1.03);
 }
+.about-center {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* stack elements vertically */
+  justify-content: center; /* center vertically */
+  align-items: center;     /* center horizontally */
+  pointer-events: none;    /* lets the button below still be clickable if you want */
+  z-index: 2;
+}
+
+.about-center main {
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent background for readability */
+  padding: 2em 3em;
+  border-radius: 16px;
+  color: #fff;
+  pointer-events: auto;  /* restore pointer events for links etc. inside */
+  max-width: 700px;
+  text-align: center;
+}
+
+.about-center h1, .about-center p {
+  color: #fff;
+}
 
