@@ -31,6 +31,7 @@ body {
   width: 100vw !important;
   height: 100vh !important;
   object-fit: cover !important;
+  object-position: center !important;
   z-index: -2 !important;
   pointer-events: none !important;
   background: black !important; /* fallback color */
@@ -241,5 +242,15 @@ body {
     display: block;
     overflow-y: visible;
     padding: 2em 0.5em 4em 0.5em; /* extra bottom padding for scrolling comfort */
+  }
+  .bg-video {
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    min-width: unset !important;
+    min-height: unset !important;
+    max-width: unset !important;
+    max-height: unset !important;
   }
 }
