@@ -23,32 +23,20 @@ body {
   min-height: 100vh;
 }
 
-/* === FULLSCREEN VIDEO BACKGROUND === */
-.bg-video {
+/* === FULLSCREEN VIDEO and IMAGE BACKGROUND === */
+.bg-video,
+.bg-image {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
   width: 100vw !important;
-  height: 100vh !important;
+  height: calc(var(--vh, 1vh) * 100) !important;
   object-fit: cover !important;
   object-position: center !important;
   z-index: -2 !important;
   pointer-events: none !important;
   background: black !important; /* fallback color */
   display: block !important;
-}
-
-/* === FULLSCREEN IMAGE BACKGROUND === */
-.bg-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -2;
-  pointer-events: none;
-  display: block;
 }
 
 /* If you have a .background div, keep this minimal: */
@@ -208,7 +196,7 @@ body {
 }
 
 /* === Mobile Responsive Adjustments === */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   html {
     font-size: 20px;
   }
@@ -230,9 +218,15 @@ body {
     margin-bottom: 1.2rem;
   }
   .landing-center {
-    padding: 2em 0.5em;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100vw;
+    min-height: unset;
+    display: block;
+    overflow-y: visible;
+    padding: 2em 0.5em 4em 0.5em;
   }
-  /* --- ONLY THIS BLOCK IS NEW/CHANGED --- */
   .menu-content {
     position: relative;
     top: auto;
@@ -241,16 +235,6 @@ body {
     min-height: unset;
     display: block;
     overflow-y: visible;
-    padding: 2em 0.5em 4em 0.5em; /* extra bottom padding for scrolling comfort */
-  }
-  .bg-video {
-    width: 100vw !important;
-    height: 100vh !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    min-width: unset !important;
-    min-height: unset !important;
-    max-width: unset !important;
-    max-height: unset !important;
+    padding: 2em 0.5em 4em 0.5em;
   }
 }
