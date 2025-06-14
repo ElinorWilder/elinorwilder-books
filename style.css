@@ -10,6 +10,10 @@ body, h1, h2, h3, h4, h5, h6, p, a, .button {
   color: #fff !important;
 }
 
+.preserve-whitespace {
+  white-space: pre-line;
+}
+
 /* Responsive font sizing for accessibility */
 html {
   font-size: 18px;
