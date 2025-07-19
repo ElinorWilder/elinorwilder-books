@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIP Area</title>
+ <link rel="stylesheet" href="style.css?v=6" />
+</head>
+<body>
+  <!-- Fullscreen Background Video -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="images/golden eyes.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Optional: Overlay for text contrast -->
+  <div class="overlay"></div>
+
+  <!-- Centered Menu Content -->
+  <div class="menu-content">
+    <h1 class="menu-title">Subscribers Exclusives</h1>
+    <div class="menu-links">
+      <a href="about.html" class="button">About Me</a>
+      <a href="newletters.html" class="button">Past Newsletters</a>
+    
+     <!--
+      <a href="free-novella.html" class="button">Free Novella</a>
+      -->
+      <a href="https://dashboard.mailerlite.com/forms/1533661/157213317076616672/share" class="button">Join My Mailing List</a>
+      <a href="books.html" class="button">Books</a>
+    </div>
+  </div>
+</body>
+</html>
