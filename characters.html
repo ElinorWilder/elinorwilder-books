@@ -1,0 +1,173 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTYZXZDLY9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VTYZXZDLY9');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Characters - Claw Ridge Wildland Shifter Firefighters</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Page-specific styles (keeps your site’s look, only adds the grid) -->
+  <style>
+    /* 2 characters per row (1 per row on small screens) */
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 1.25rem;
+    }
+    @media (max-width: 680px) {
+      .character-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Card */
+    .character-card {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 16px;
+      background: rgba(0,0,0,0.35);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px;
+      padding: 14px;
+      backdrop-filter: blur(2px);
+    }
+    @media (max-width: 520px) {
+      .character-card { grid-template-columns: 1fr; }
+    }
+
+    /* Main portrait (keep a consistent look if your images vary) */
+    .character-card .portrait {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #111;
+    }
+
+    /* Text area */
+    .character-meta h2 {
+      margin: 0 0 6px;
+      font-size: 1.25rem;
+      line-height: 1.2;
+    }
+    .character-meta .role {
+      margin: 0 0 8px;
+      font-weight: 600;
+      color: #9ec4ff;
+      letter-spacing: 0.2px;
+    }
+    .character-meta p {
+      margin: 0;
+      opacity: 0.9;
+      line-height: 1.5;
+      white-space: pre-wrap; /* lets you paste multi-line blurbs */
+    }
+
+    /* Optional: small badge row for traits */
+    .traits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0;
+    }
+    .trait {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(0,0,0,0.25);
+      font-size: 12px;
+      letter-spacing: 0.2px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Full screen background (same as your site) -->
+  <div class="background">
+    <img src="images/misty-forest.jpg" alt="Misty Forest" class="bg-image" />
+  </div>
+
+  <!-- Centered Content (same container as your sample) -->
+  <div class="about-center">
+    <main>
+      <h1>Meet the Characters</h1>
+
+      <!-- GRID: 2 characters per row -->
+      <section class="character-grid">
+
+        <!-- Character 1 -->
+        <article class="character-card">
+          <img class="portrait" src="images/PLACEHOLDER-1.jpg" alt="CHAR NAME portrait">
+          <div class="character-meta">
+            <h2>CHAR NAME</h2>
+            <div class="role">ROLE / FACTION</div>
+            <div class="traits">
+              <span class="trait">trait one</span>
+              <span class="trait">trait two</span>
+              <span class="trait">trait three</span>
+            </div>
+            <p>Short blurb about this character. Keep to 1–3 sentences for balance.</p>
+          </div>
+        </article>
+
+        <!-- Character 2 -->
+        <article class="character-card">
+          <img class="portrait" src="images/PLACEHOLDER-2.jpg" alt="CHAR NAME portrait">
+          <div class="character-meta">
+            <h2>CHAR NAME</h2>
+            <div class="role">ROLE / FACTION</div>
+            <div class="traits">
+              <span class="trait">trait one</span>
+              <span class="trait">trait two</span>
+              <span class="trait">trait three</span>
+            </div>
+            <p>Short blurb about this character. Keep to 1–3 sentences for balance.</p>
+          </div>
+        </article>
+
+        <!-- Character 3 -->
+        <article class="character-card">
+          <img class="portrait" src="images/PLACEHOLDER-3.jpg" alt="CHAR NAME portrait">
+          <div class="character-meta">
+            <h2>CHAR NAME</h2>
+            <div class="role">ROLE / FACTION</div>
+            <div class="traits">
+              <span class="trait">trait one</span>
+              <span class="trait">trait two</span>
+              <span class="trait">trait three</span>
+            </div>
+            <p>Short blurb about this character. Keep to 1–3 sentences for balance.</p>
+          </div>
+        </article>
+
+        <!-- Character 4 -->
+        <article class="character-card">
+          <img class="portrait" src="images/PLACEHOLDER-4.jpg" alt="CHAR NAME portrait">
+          <div class="character-meta">
+            <h2>CHAR NAME</h2>
+            <div class="role">ROLE / FACTION</div>
+            <div class="traits">
+              <span class="trait">trait one</span>
+              <span class="trait">trait two</span>
+              <span class="trait">trait three</span>
+            </div>
+            <p>Short blurb about this character. Keep to 1–3 sentences for balance.</p>
+          </div>
+        </article>
+
+        <!-- Duplicate <article> blocks for more characters -->
+      </section>
+
+      <a href="menu.html" class="button back-link" style="margin-top:1.25rem;">Back to the Woods</a>
+    </main>
+  </div>
+</body>
+</html>
+
