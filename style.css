@@ -241,4 +241,60 @@ body {
     overflow-y: visible;
     padding: 2em 0.5em 4em 0.5em;
   }
+  }
+
+/* Wider container for this page (optional if you want bigger cards) */
+.about-center main { max-width: 1200px; }
+
+/* === Character Page Grid (global) === */
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 1.25rem;
 }
+
+@media (max-width: 680px) {
+  .character-grid { grid-template-columns: 1fr; }
+}
+
+.character-card {
+  display: grid;
+  grid-template-columns: 250px 1fr; /* controls portrait size */
+  gap: 16px;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+@media (max-width: 520px) {
+  .character-card { grid-template-columns: 1fr; }
+}
+
+.character-card .portrait {
+  width: 100%;
+  height: 350px;         /* bigger portrait */
+  object-fit: cover;
+  border-radius: 8px;
+  background: #111;
+}
+
+.character-meta h2 {
+  margin: 0 0 6px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.character-meta .role {
+  margin: 0 0 8px;
+  font-weight: 600;
+  color: #9ec4ff;
+}
+
+.character-meta p {
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
