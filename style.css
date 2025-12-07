@@ -302,3 +302,59 @@ body {
   color: rgba(255,255,255,0.6); /* lighter so it doesn’t shout */
   margin-top: 4px;
 }
+/* === Book Cards Grid === */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media (max-width: 700px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === Book Card Style === */
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0,0,0,0.35);
+  border: 2px solid #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.7);
+}
+
+/* Cover images */
+.book-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: .75rem;
+}
+
+/* Title styled like buttons */
+.book-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px black;
+  margin-bottom: .35rem;
+}
+
+/* Type label */
+.book-type {
+  opacity: 0.9;
+  font-size: 1rem;
+}
